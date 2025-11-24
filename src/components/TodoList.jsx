@@ -25,7 +25,7 @@ function TodoList({ todos, Delete, onToggle, onEdit, onUpdate }) {
             <h2 className='list-title'>할일 목록</h2>
             <div className="filter-wrap">
 
-                <button className={`filter-btn ${filter === "전체" ? "active" : ""}`} onClick={() => setFilter("전체")}>전체</button>
+                <button className={`filter-btn ${filter === "전체" ? "active" : ""}`} onClick={() => setFilter("전체")}>모두보기!!!</button>
                 <button className={`filter-btn ${filter === "미완료" ? "active" : ""}`} onClick={() => setFilter("미완료")}>미완료</button >
                 <button className={`filter-btn ${filter === "완료" ? "active" : ""}`} onClick={() => setFilter("완료")}>완료</button>
             </div>
