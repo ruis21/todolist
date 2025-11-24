@@ -112,7 +112,7 @@ function App() {
   return (
 
     <div className='app'>
-      <h1 className='title'>Todo List</h1>
+      <h1 className='title'>Todo List(할일목록)</h1>
       <div className='contents'>
 
         {/* 인풋 추가 영역  */}
