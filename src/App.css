@@ -1,0 +1,166 @@
+.app {
+  width: 100%;
+  max-width: 540px;
+  margin: 50px auto;
+  background: rgb(174, 234, 72);
+  border-radius: 20px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+  text-align: center;
+  color: #494949;
+  font-size: 32px;
+  padding: 30px 0 20px;
+}
+
+.contents {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  min-height: 70vh;
+}
+
+.input-wrap {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.input-add {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  background: #e7faea;
+  outline: none;
+  flex: 1;
+  box-shadow: inset 0 0 0 1px #ccc;
+}
+
+.input-add:focus {
+  box-shadow: inset 0 0 0 2px #ccc;
+  background: #ccc;
+}
+
+
+
+.list-title {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.btn {
+  padding: 12px 20px;
+  background: #52a838;
+  color: #ffffff;
+  border-radius: 10px;
+  font-size: 16px;
+  border: 1px solid #407c2e;
+  transition: 0.3s all ease;
+}
+
+.btn:hover {
+  background: #235e28;
+}
+
+.todo-list li {
+  background: #f0f0f0;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  transition: 0.3s all ease;
+  position: relative;
+}
+
+.todo-list li:hover {
+  background-color: rgb(218, 218, 218);
+  border-color: rgb(35, 223, 18);
+}
+
+.empty-list {
+  text-align: center;
+}
+
+.edit-btn {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  color: #999;
+  background: transparent;
+  font-size: 15px;
+}
+
+.delete-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  color: #999;
+  background: transparent;
+  font-size: 18px;
+}
+
+.todo-list li:has(input:checked) {
+  background: #bbbbbb;
+}
+
+.filter-wrap {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  padding: 7px 16px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.filter-btn.active {
+  background: rgb(174, 234, 72);
+  color: #464646;
+  border-color: rgb(174, 234, 72);
+}
+
+.save-btn {
+  position: absolute;
+  right: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #202020;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 3px 10px;
+  font-size: 14px;
+}
+
+.cancel-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #aaaaaa;
+  color: #333;
+  border: none;
+  border-radius: 15px;
+  padding: 3px 10px;
+  font-size: 14px;
+}
+
+.edit-input {
+  width: calc(100% - 100px);
+  padding: 6px 10px;
+  border: 1px solid #52a838;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+}
